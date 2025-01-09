@@ -5,29 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Wash</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+    </style>
 </head>
-<body class="bg-[url('https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/67443d553e60455fc80989b0_bg.webp')] bg-cover text-white">
-    <nav class="flex justify-between px-44 items-center border-b-[1px] border-b-[rgba(255,255,255,0.2)]">
-        <img class="w-[300px]" src='https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/674056c158226318691fcd45_logo%20two.svg' alt="">
-        <ul class="flex gap-10 font-medium text-xl cursor-pointer">
-            <li>Home</li>
-            <li>Pages</li>
-            <li>Services</li>
-            <li>Blog</li>
-        </ul>
-        <div class="flex items-center gap-5">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471s336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527"/></svg>
-            <button class="px-6 rounded-full text-white text-lg py-3 bg-[#E81C2E]">Contact Us</button>
-        </div>
-    </nav>
+<body>
+    <div class="bg-[url('https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/67443d553e60455fc80989b0_bg.webp')] bg-cover text-white">
+        <nav class="flex justify-between px-44 items-center border-b-[1px] border-b-[rgba(255,255,255,0.2)]">
+            <img class="w-[300px]" src='https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/674056c158226318691fcd45_logo%20two.svg' alt="">
+            <ul class="flex gap-10 font-medium text-xl cursor-pointer">
+                <li>Home</li>
+                <li>Pages</li>
+                <li>Services</li>
+                <li>Blog</li>
+            </ul>
+            <div class="flex items-center gap-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 1024 1024"><path fill="currentColor" d="M1014.64 969.04L703.71 656.207c57.952-69.408 92.88-158.704 92.88-256.208c0-220.912-179.088-400-400-400s-400 179.088-400 400s179.088 400 400 400c100.368 0 192.048-37.056 262.288-98.144l310.496 312.448c12.496 12.497 32.769 12.497 45.265 0c12.48-12.496 12.48-32.752 0-45.263zM396.59 736.527c-185.856 0-336.528-150.672-336.528-336.528S210.734 63.471 396.59 63.471s336.528 150.672 336.528 336.528S582.446 736.527 396.59 736.527"/></svg>
+                <button class="px-6 rounded-full text-white text-lg py-3 bg-[#E81C2E]">Contact Us</button>
+            </div>
+        </nav>
+        <section class="text-white min-h-[100vh] flex flex-col px-44 justify-center items-start w-[50%] relative">
+            <p class="capitalize text-[#E81C2E] text-3xl border-b-[1px] border-b-[rgba(255,255,255,0.2)] pb-2">welcome to best car wash</p>
+            <p class="capitalize text-[70px] leading-[1.1]">sparkles on wheels is every car wash</p>
+            <button class="w-fit px-6 rounded-full text-white text-lg py-3 bg-[#E81C2E] mt-10 mb-14">Contact Us</button>
+            <div class="w-[120px] h-[120px] rounded-full bg-[#E81C2E] flex items-center justify-center absolute left-[93%] top-[78%] border border-4 border-white">
+                <img class="" src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/675143e0d0115050e52dcf36_1%20(5).svg" alt="">
+            </div>
+        </section>
+    </div>
+    
+    <section class="px-44 mt-[100px]">
+        <p class="capitalize text-xl text-[#E81C2E] border-b-[1px] border-b-gray mb-12 pb-2">about us</p>
+        <div class="flex gap-20 items-center">
+            <!-- left side -->
+            <div class="w-1/2">
+                <p class="text-[60px] leading-none font-medium ">Master the Essentials for Expanding Ideas</p>
+                <img class="rounded-lg mt-4" src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/672a000c5d196245b9f57e79_about%20image.webp" alt="">
+            </div>
+            <!-- right side -->
+            <div class="w-1/2">
+                <p class="text-xl text-gray-500 border-b-[1px] border-b-gray pb-7">Our team uses advanced cleaning techniques and eco-friendly products to restore your vehicle's shine while protecting its finish. With services designed for convenience and exceptional results, we take pride in ensuring each car leaves looking its best.</p>
+                <div class="text-xl mt-5 font-medium flex flex-col gap-11">
 
-    <section class="text-white min-h-[100vh] flex flex-col px-44 justify-center items-start w-[50%] relative">
-        <p class="capitalize text-[#E81C2E] text-3xl border-b-[1px] border-b-[rgba(255,255,255,0.2)] pb-2">welcome to best car wash</p>
-        <p class="capitalize text-[70px] leading-[1.1]">sparkles on wheels is every car wash</p>
-        <button class="w-fit px-6 rounded-full text-white text-lg py-3 bg-[#E81C2E] mt-10 mb-14">Contact Us</button>
-        <div class="w-[120px] h-[120px] rounded-full bg-[#E81C2E] flex items-center justify-center absolute left-[96%] top-[75%] border border-4 border-white">
-            <img class="" src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/675143e0d0115050e52dcf36_1%20(5).svg" alt="">
+                    <div class="flex flex-col gap-4 mt-9">
+                        <div class="flex gap-5 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><path fill="#E81C2E" d="M24 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S4 35.046 4 24S12.954 4 24 4m8.634 13.616a1.25 1.25 0 0 0-1.666-.091l-.102.091L20.75 27.732l-3.616-3.616a1.25 1.25 0 0 0-1.859 1.666l.091.102l4.5 4.5a1.25 1.25 0 0 0 1.666.091l.102-.091l11-11a1.25 1.25 0 0 0 0-1.768"/></svg>
+                            <p>Wheel & steering checkup</p>
+                        </div>
+                        <div class="flex gap-5 items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48"><path fill="#E81C2E" d="M24 4c11.046 0 20 8.954 20 20s-8.954 20-20 20S4 35.046 4 24S12.954 4 24 4m8.634 13.616a1.25 1.25 0 0 0-1.666-.091l-.102.091L20.75 27.732l-3.616-3.616a1.25 1.25 0 0 0-1.859 1.666l.091.102l4.5 4.5a1.25 1.25 0 0 0 1.666.091l.102-.091l11-11a1.25 1.25 0 0 0 0-1.768"/></svg>
+                            <p>Engine services</p>
+                        </div>
+                    </div>
+
+                    <div class="uppercase grid grid-cols-[2fr_2fr_2fr] mt-5">
+                        <div>
+                            <p class="font-bold text-[50px] mb-5 tracking-wider">50<sup>+</sup></p>
+                            <p class="text-sm text-[#E81C2E]">satisfied customer</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-[50px] mb-5 tracking-wider">200<sup>+</sup></p>
+                            <p class="text-sm text-[#E81C2E]">trusted people</p>
+                        </div>
+
+                        <div>
+                            <p class="font-bold text-[50px] mb-5 tracking-wider">30<sup>+</sup></p>
+                            <p class="text-sm text-[#E81C2E]">years of experiance</p>
+                        </div>
+                    </div>
+                    <button class="w-fit px-6 rounded-full text-white text-lg py-3 bg-[#E81C2E]">Contact Us</button>
+                </div>
+            </div>
         </div>
+
     </section>
+    
+
 </body>
 </html>
