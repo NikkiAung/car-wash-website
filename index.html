@@ -13,6 +13,38 @@
             list-style: none;
             text-decoration: none;
         }
+        .animation1 {
+            animation: scaleAnimation1 2s infinite;
+        }
+
+        .animation2 {
+            animation: scaleAnimation2 2s infinite;
+        }
+
+        @keyframes scaleAnimation1 {
+            0% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.2);
+            }
+
+            100% {
+            transform: scale(1);
+            }
+        }
+        @keyframes scaleAnimation2 {
+            0% {
+            transform: scale(1);
+            }
+            50% {
+            transform: scale(1.4);
+            }
+
+            100% {
+            transform: scale(1);
+            }
+        }
     </style>
 </head>
 <body>
@@ -210,7 +242,7 @@
         </div>
     </section>
 
-    <section class="px-44 mt-[100px] h-screen">
+    <section class="px-44 mt-[100px]">
         <p class="text-[#E81C2E] text-lg font-bold pb-1">Portfolio</p>
         <div class="h-[2px] bg-gray-300 relative mb-3">
             <div 
@@ -272,6 +304,30 @@
 
         
     </section>
+
+    <div class="relative md:mt-[100px] mt-[50px]">
+        <video class="w-full" src="./public/car-wash.mp4" autoplay muted></video>
+        <img
+          class="absolute bottom-0 lg:h-[150px] md:h-[70px] h-[30px]"
+          src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/6747004314ed475143f081cf_Vector%201.png"
+          alt=""
+        />
+        <div
+          class="md:w-[100px] w-[60px] absolute md:h-[100px] w-[60px] left-[50%] translate-x-[-50%] lg:bottom-[70px] md:bottom-[20px] bottom-[0px] rounded-full bg-[#E81C2E] flex items-center justify-center"
+        >
+          <div
+            class="absolute animation1 opacity-[0.2] rounded-full w-full h-full top-0 left-0 bg-[#E81C2E]"
+          ></div>
+          <div
+            class="absolute animation2 opacity-[0.2] rounded-full w-full h-full top-0 left-0 bg-[#E81C2E]"
+          ></div>
+          <img
+            class="relative z-[100]"
+            src="https://cdn.prod.website-files.com/6721d39cdb56d9f529588886/673329f1d05b6cde6dbacf57_video%20play%201.svg"
+            alt=""
+          />
+        </div>
+      </div>
 
 </body>
 </html>
